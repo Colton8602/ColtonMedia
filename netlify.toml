@@ -2,4 +2,4 @@
 # into _site, which matches the publish directory set in the Netlify UI.
 [build]
   command = "rm -rf _site && mkdir _site && cp -r index.html favicon.png logo.png robots.txt admin content media _site/"
-  publish = "_site"
+  publish = "index.html"
