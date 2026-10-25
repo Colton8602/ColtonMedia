@@ -1,7 +1,7 @@
 # Replace the repo line with YOUR GitHub username and repository name, e.g. choward05/ch-media
 backend:
   name: github
-  repo: Colton8602/CH-Media
+  repo: Colton8602/ColtonMedia
   branch: main
 
 media_folder: media/uploads
