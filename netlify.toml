@@ -1,0 +1,5 @@
+# Plain static site: no build step, publish the repository root.
+# This matches the Netlify UI and avoids copying folders that do not exist.
+[build]
+  command = "echo 'No build step: static site'"
+  publish = "."
