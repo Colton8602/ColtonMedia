@@ -1,5 +1,5 @@
-# Plain static site: no build step, publish the repository root.
-# This overrides the build command and publish directory set in the Netlify UI.
+# Plain static site: no compiler needed. The build step copies the site files
+# into _site, which matches the publish directory set in the Netlify UI.
 [build]
-  command = "echo 'No build step: static site'"
-  publish = "."
+  command = "rm -rf _site && mkdir _site && cp -r index.html favicon.png logo.png robots.txt admin content media _site/"
+  publish = "_site"
