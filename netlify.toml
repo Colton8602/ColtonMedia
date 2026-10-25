@@ -1,5 +1,5 @@
-# Plain static site: no build step, publish the repository root.
-# This matches the Netlify UI and avoids copying folders that do not exist.
+# Plain static site (Decap CMS admin lives in /admin): no build step, publish the repository root.
+# The command overrides the "cecil build" setting in the Netlify UI.
 [build]
   command = "echo 'No build step: static site'"
   publish = "."
